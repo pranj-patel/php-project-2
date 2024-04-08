@@ -1,0 +1,370 @@
+*{margin:0px;padding:0px;box-sizing: border-box}
+:root{
+    --content-width:1300px;
+    --primary:#FF8551;
+    --secondary:#46b5ff;
+}
+
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+    background-color: #f0f0f0; 
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 80px;
+}
+
+
+/* Style the header */
+.header {
+    background-color: #000; 
+    color: #fff;
+    padding: 10px 0;
+
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+.nav-list li:last-child {
+    margin-right: 0;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav .username b{color: var(--secondary);}
+
+.container{
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.content-container {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Style the footer */
+footer {
+    background-color: #333; 
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom:0px;
+    left:0px;
+    width:100%;
+}
+
+    
+a{transition: color 0.2s;text-decoration: none;color:var(--secondary)}
+a.active,a:hover{color:var(--primary) !important}
+
+
+
+/* Styling for form fields */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Styling for submit button */
+button,.btn {
+    background-color: #000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]{
+    width:200px;
+    transition: all 0.3s ease;
+}
+button[type="submit"]:hover {
+    background-color: var(--primary);
+    width:210px;
+}
+
+.alert {
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.alert-danger {
+    background-color: #f8d7da !important;
+    color: #b40617 !important;
+    border: 1px solid #f5c6cb !important;
+}
+
+.alert-success {
+    background-color: #d7f8e2 !important;
+    color: #19a04d !important;
+    border: 1px solid #d7f8e2 !important;
+}
+
+.text-primary{color:var(--primary)}
+.text-secondary{color:var(--secondary)}
+.text-danger{color:red}
+
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.login-form {
+    width:500px;
+    max-width:500px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.d-flex{display: flex;}
+.w-100{width: 100%;}
+.w-50{width: 50%;}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.heading{
+    margin-bottom: 20px;
+    border-bottom:1px solid #ccc;
+    padding:10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.inp{
+    margin-bottom:20px;border:2px dotted var(--primary);border-radius:2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding:10px 15px;
+}
+
+.inp .inp-username{
+    min-width: 90%;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: row;
+}
+
+.pagination li {
+    list-style-type: none;
+    margin: 0 5px;
+    display: inline;
+}
+
+.pagination li.active {
+    font-weight: bold;
+}
+
+.pagination .page-link {
+    text-decoration: none;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a.page-link:hover {
+    background-color: var(--primary);
+    color: #000000 !important;
+}
+.pagination .page-item.active .page-link{
+    background-color: var(--primary);
+    color: #000000 !important;
+}
+
+
+/* Add your CSS styles for the InP detail page here */
+
+.inp-details {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+.inp-project{
+background-color: #f9f9f9;
+border: 1px solid var(--primary);
+margin: 20px;
+padding: 20px;
+border-radius: 5px;
+display: block;
+}
+
+
+.project-details {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    position: relative;
+}
+
+.project-details h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.project-details p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.project_action{
+    position: absolute;
+    top:10px;
+    right:10px;
+    padding:6px;
+    background-color: white;
+    border:1px solid var(--primary)
+}
+
+.project_action a{
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+
+.project-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.project-list li {
+    margin-bottom: 10px;
+}
+
+
+
+.project-files {
+    display: flex;
+    flex-wrap: wrap;
+    /* background: #fff; */
+    /* padding: 20px; */
+
+}
+
+
+.project-file {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.project-file img {
+    max-width: 200px;
+    max-height: 200px;
+    border: 1px solid #ddd; 
+    border-radius: 5px;
+}
+
+.project-files .heading{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 18px;
+    width:100%;
+}
+
+
+.application {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+.username {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: var(--primary);
+}
+
+.justification {
+    margin-bottom: 5px;
+    font-size: 12px;
+    color:#363636;
+}
